@@ -6,8 +6,6 @@ call plug#begin()
     Plug 'rafi/awesome-vim-colorschemes'
     Plug 'daltonmenezes/aura-theme', { 'rtp': 'packages/neovim' }
 
-    
-
     " Utilities
     Plug 'sheerun/vim-polyglot'
     Plug 'jiangmiao/auto-pairs'
