@@ -5,6 +5,8 @@ call plug#begin()
     Plug 'ryanoasis/vim-devicons'
     Plug 'rafi/awesome-vim-colorschemes'
     Plug 'daltonmenezes/aura-theme', { 'rtp': 'packages/neovim' }
+    Plug 'lambdalisue/nerdfont.vim'
+
 
     " Utilities
     Plug 'sheerun/vim-polyglot'
@@ -23,6 +25,16 @@ call plug#begin()
     
 
 call plug#end()
+
+
+" Encoding
+set encoding=UTF-8
+
+
+" Nerd Font
+set guifont=DroidSansMono\ Code\ Nerd\ Font:h12
+
+
 
 " Colorscheme
 colorscheme default
@@ -111,4 +123,3 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1] =~# '\s'
 endfunction
-
