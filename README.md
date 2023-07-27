@@ -3,6 +3,33 @@
 This is my Neovim configuration file that customizes the behavior and appearance of Neovim. It includes various plugins to enhance the editing experience and streamline my workflow.
 <img src="neovim.png">
 
+
+## Installation
+**Note: ** 
+The setup will be different for root and non-root. 
+Just make sure to be a sudo user when setting up config file for neovim.
+Non-root users usually can't write to files which are owned by root so it's better to setup config file for root.
+
+```nix
+#Clone Repo
+$git clone https://github.com/offensive-droid/Neovim-Config
+
+#Setup Config File, Place this vim file's content to that file.
+$sudo mkdir ~/config/nvim
+$sudo touch init.vim
+
+# Install vimplug
+Refer here: https://github.com/junegunn/vim-plug
+
+#After vimplug is installed evoke this in Neovim to install Plugins.
+:PlugInstall
+
+#For Vim-Devicons to work
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+```
+
 ## Plugins
 
 The configuration begins with the definition of plugins using the `plug` plugin manager. The following plugins are included:
