@@ -5,7 +5,8 @@ This is my Neovim configuration file that customizes the behavior and appearance
 
 
 ## Installation
-**Note: ** 
+**❗Note:** 
+
 The setup will be different for root and non-root. 
 Just make sure to be a sudo user when setting up config file for neovim.
 Non-root users usually can't write to files which are owned by root so it's better to setup config file for root.
