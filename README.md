@@ -36,28 +36,23 @@ cd fonts
 The configuration begins with the definition of plugins using the `plug` plugin manager. The following plugins are included:
 
 ### Appearance
-
 - [vim-airline](https://github.com/vim-airline/vim-airline): Provides a sleek status line and tabline for Neovim.
 - [vim-devicons](https://github.com/ryanoasis/vim-devicons): Adds fancy icons for various file types and directories.
 - [awesome-vim-colorschemes](https://github.com/rafi/awesome-vim-colorschemes): A collection of beautiful color schemes for Neovim.
 - [aura-theme](https://github.com/daltonmenezes/aura-theme): A theme to enhance Neovim's appearance.
 
 ### Utilities
-
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for syntax highlighting and indentation.
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs): Auto-closes brackets, quotes, and other pairs in a smart way.
 - [vim-css-color](https://github.com/ap/vim-css-color): Highlights CSS color codes in Neovim.
 
 ### Completion / Linters / Formatters
-
 - [vim-markdown](https://github.com/plasticboy/vim-markdown): Enhances Markdown editing capabilities in Neovim.
 
 ### Git
-
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter): Shows Git diff in the sign column and stages/unstages hunks.
 
 ### Code Completion
-
 - [coc.nvim](https://github.com/neoclide/coc.nvim): A language server client for Neovim that provides code completion and more.
 - [copilot.vim](https://github.com/github/copilot.vim): Integrates GitHub Copilot AI-assisted coding in Neovim.
 
@@ -67,7 +62,7 @@ The default colorscheme used in Neovim.
 
 ## Airline Settings
 
-Custom settings for the [vim-airline](https://github.com/vim-airline/vim-airline) plugin.
+Custom settings for the `vim-airline` plugin.
 
 ## File Browser
 
@@ -79,7 +74,7 @@ Various settings for Neovim, including background color, clipboard behavior, lin
 
 ## Tabs Size
 
-Settings related to tabs, including expandtab, shiftwidth, and tabstop.
+Settings related to tabs, including `expandtab`, `shiftwidth`, and `tabstop`.
 
 ## Syntax Highlighting
 
@@ -91,12 +86,12 @@ If supported by the terminal, enables italics for certain text elements in Neovi
 
 ## Coc Settings
 
-Settings for the [coc.nvim](https://github.com/neoclide/coc.nvim) plugin for code completion and more.
+Settings for the `coc.nvim` plugin for code completion and more.
 
 ## UltiSnips Settings
 
-Settings for the [UltiSnips](https://github.com/SirVer/ultisnips) plugin for code snippets.
+Settings for the `UltiSnips` plugin for code snippets.
 
 ## Coc-snippets Settings
 
-Settings for the [coc-snippets](https://github.com/neoclide/coc-snippets) plugin for snippets integration with coc.nvim.
+Settings for the `coc-snippets` plugin for snippets integration with `coc.nvim`.
