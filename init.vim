@@ -1,3 +1,4 @@
+
 " Plugins
 call plug#begin()
     " Appearance
@@ -13,16 +14,19 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'ap/vim-css-color'
     Plug 'preservim/nerdtree'
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+    Plug 'andymass/vim-matchup'
 
     " Completion / linters / formatters
     Plug 'plasticboy/vim-markdown'
     " Git
     Plug 'airblade/vim-gitgutter'
+    Plug 'mattn/emmet-vim'
 
     " Code completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'github/copilot.vim'
-    
+
 
 call plug#end()
 
@@ -35,12 +39,12 @@ set encoding=UTF-8
 set guifont=DroidSansMono\ Code\ Nerd\ Font:h12
 
 
-
 " Colorscheme
-colorscheme default
+"colorscheme aura-dark
+colorscheme blue
 
 " Airline settings
-let g:airline_theme = 'murphy'
+let g:airline_theme = 'minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -112,6 +116,9 @@ let g:UltiSnipsJumpForwardTrigger = "<c-b>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 let g:UltiSnipsEditSplit = "vertical"
 
+"Emmet vim
+let g:user_emmet_leader_key=','
+
 " Coc-snippets settings
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
@@ -123,3 +130,12 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1] =~# '\s'
 endfunction
+
+
+"Curly brackets
+set showmatch
+set matchtime=3"
+
+inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap ] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap ) )<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
