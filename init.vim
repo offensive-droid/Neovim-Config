@@ -1,4 +1,3 @@
-
 " Plugins
 call plug#begin()
     " Appearance
